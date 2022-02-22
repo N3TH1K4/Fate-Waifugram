@@ -10,14 +10,14 @@ from telegram.ext import MessageHandler, Filters
 
 db = mysql.connector.connect(
     host="localhost",
-    user="PUT YOUR ROOT",
-    passwd="PUT YOUR PASSWORD",
-    database="PUT YOUR DB",
+    user="racdhoanmvxavq",
+    passwd="82cecb1f8227504709070f2e9736b1d1cc23ce06b7e1c07197806676faa9f4ff",
+    database="postgres://racdhoanmvxavq:82cecb1f8227504709070f2e9736b1d1cc23ce06b7e1c07197806676faa9f4ff@ec2-34-230-110-100.compute-1.amazonaws.com:5432/ddqmt51fs2misf",
     autocommit=True)
 mycursor = db.cursor(buffered=True)
 
 logger = logging.getLogger(__name__)
-updater = Updater('PUT YOUR BOT TOKEN', use_context=True)
+updater = "1994734149:AAF7qWqGotAvBqJEfDHSlDhrKucSfXLziAc"
 
 
 def error(update, context):
